@@ -186,3 +186,16 @@ on property:sys.boot_completed=1
     write /sys/kernel/ged/hal/dvfs_margin_value 130
     write /sys/kernel/ged/hal/timer_base_dvfs_margin 798
     write /sys/kernel/ged/hal/loading_base_dvfs_step 4
+
+    # Reset phantom DPS device_config namespaces not present on CrDroid
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear device_personalization_services
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear notification_assistant
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear adservices
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear health_fitness
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear odad
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear privacy
+    exec_background u:r:shell:s0 -- /system/bin/device_config reset untrusted_clear systemui
+
+    # WiFi power save
+    setprop wifi.supplicant_scan_interval 180
+    setprop persist.wifi.sleep_policy 2
