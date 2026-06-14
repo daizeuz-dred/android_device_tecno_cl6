@@ -186,9 +186,14 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Fingerprint
+#PRODUCT_PACKAGES += \
+#    android.hardware.biometrics.fingerprint@2.1.vendor:64 \
+#    android.hardware.biometrics.fingerprint@2.3.vendor:64
+
+# Fingerprint HAL Service Daemon
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.vendor:64 \
-    android.hardware.biometrics.fingerprint@2.3.vendor:64
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.biometrics.fingerprint@2.3-service
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
