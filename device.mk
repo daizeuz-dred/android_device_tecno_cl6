@@ -446,6 +446,21 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Properties
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.vendor.mtk_doze_enable=1 \
+    ro.config.dps_enabled=false \
+    pm.dexopt.boot=verify \
+    pm.dexopt.bg-dexopt=speed-profile \
+    persist.sys.app_standby_enabled=true \
+    persist.wifi.sleep_policy=2 \
+    wifi.supplicant_scan_interval=180 \
+    debug.sf.disable_backpressure=1 \
+    debug.sf.recomputecrop=0 \
+    debug.renderengine.backend=skiaglthreaded \
+    ro.surface_flinger.max_frame_buffer_acquired_buffers=3 \
+    ro.sys.fw.bg_apps_limit=16 \
+    persist.sys.job_scheduler_constants=min_ready_non_active_jobs_count=1
+
 include $(LOCAL_PATH)/vendor_logtag.mk
 
 # Public Libraries
