@@ -617,4 +617,16 @@
     <!-- Default value for fp screen off unlock toggle, it only works for the devices that support
          fp screen off unlock-->
     <bool name="config_screen_off_udfps_default_on">true</bool>
+    <!-- Enable Doze auto power save modes -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- Disable notification assistant features absent from this build -->
+    <bool name="config_notificationAssistantEnabled">false</bool>
+
+    <!-- Reduce background job pressure during idle -->
+    <bool name="config_backgroundDeferredJobThrottleEnabled">true</bool>
+
+    <!-- Disable multicast filtering bypass to reduce WiFi wakeups -->
+    <bool name="config_wifi_framework_cellular_handover_enable_merging_networks">false</bool>
+
 </resources>
