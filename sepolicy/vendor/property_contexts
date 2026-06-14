@@ -59,4 +59,6 @@ vendor.tms. u:object_r:vendor_nfc_prop:s0
 vendor.tee.googlekey.status                          u:object_r:vendor_mtk_trustonic_tee_prop:s0
 
 # VT
-ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+# ro.vendor.vt.                               u:object_r:vendor_mtk_vendor_vt_prop:s0
+
+vendor.mtk.omx.core.  u:object_r:vendor_mtk_omx_core_prop:s0
