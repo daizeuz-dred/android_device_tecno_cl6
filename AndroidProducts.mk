@@ -6,3 +6,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_CL6.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_CL6-user \
+    lineage_CL6-userdebug \
+    lineage_CL6-eng

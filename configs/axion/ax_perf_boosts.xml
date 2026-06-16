@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<perf-boosts>
+    <boost-resource id="0x01fd" name="latency_boost">
+        <set resource="cpu_min_big" id="0x0003" value="1200000" />
+        <set resource="uclamp_top_min" id="0x0014" value="100" />
+    </boost-resource>
+
+    <boost opcode="1" timeout_ms="3000" name="first_launch"
+           uc="SvpPolicy" dc="MaxPerformance">
+        <set resource="latency_boost" id="0x01fd" />
+    </boost>
+
+    <boost opcode="2" timeout_ms="500" name="scroll_boost">
+        <set resource="cpu_min_little" id="0x0001" value="800000" />
+        <set resource="cpu_min_big" id="0x0003" value="1000000" />
+    </boost>
+</perf-boosts>

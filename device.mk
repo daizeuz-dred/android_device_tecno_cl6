@@ -576,3 +576,17 @@ PRODUCT_PACKAGES += \
 # Inherit the proprietary files
 $(call inherit-product, vendor/tecno/CL6/CL6-vendor.mk)
 
+# --- AxionOS Device Identity Properties ---
+AXION_MAINTAINER := DΞΞZNUTZ
+AXION_PROCESSOR := Mediatek Helio G99
+
+# Camera sensor info (comma-separated MP values)
+AXION_CAMERA_REAR_INFO := 50,8,2       # adjust to CL6's actual rear sensors
+AXION_CAMERA_FRONT_INFO := 8           # adjust to CL6's front sensor
+
+# --- AxBurstEngine XML files ---
+PRODUCT_COPY_FILES += \
+    device/tecno/CL6/configs/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \
+    device/tecno/CL6/configs/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
+    device/tecno/CL6/configs/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
+    device/tecno/CL6/configs/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml

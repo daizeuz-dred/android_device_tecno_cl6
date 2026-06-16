@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<perf-threads>
+    <role name="render"  uclamp_min="512" uclamp_max="1024" />
+    <role name="input"   uclamp_min="256" uclamp_max="1024" />
+    <role name="default" uclamp_min="0"   uclamp_max="1024" />
+</perf-threads>

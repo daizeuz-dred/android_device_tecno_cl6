@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<perf-config>
+    <atmc>
+        <cpu_levels little="480,2000" big="400,2200" />
+        <gpu_levels min="0" max="4" />
+    </atmc>
+</perf-config>
