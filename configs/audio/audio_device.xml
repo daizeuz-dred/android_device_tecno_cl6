@@ -28,33 +28,18 @@
             <kctl name="DAC In Mux" value="Normal Path" />
             <kctl name="RCV Mux" value="Voice Playback" />
             <kctl name="RCV_AMP_MODE" value="RECIEVER_MODE" />
-            <kctl name="Ext_Reciver_Amp Switch" value="1" />
-	    <kctl name="SpkrLeft Sia81xx Audio Scene" value="Receiver" />
-            <kctl name="SpkrLeft Sia81xx Power" value="On" />
         </path>
         <path name="receiver_output" value="turnoff">
-	    <kctl name="SpkrLeft Sia81xx Power" value="Off" />
-	    <kctl name="SpkrLeft Sia81xx Audio Scene" value="Playback" />
             <kctl name="RCV Mux" value="Open" />
             <kctl name="RCV_AMP_MODE" value="SPEAKER_MODE" />
-            <kctl name="Ext_Reciver_Amp Switch" value="0" />
         </path>
         <!--2-in-1 speaker output-->
         <path name="two_in_one_speaker_output" value="turnon">
-            <!--  ALPS05007528 begin -->
             <kctl name="RCV_AMP_MODE" value="RECIEVER_MODE" />
             <kctl name="DAC In Mux" value="Normal Path" />
             <kctl name="RCV Mux" value="Voice Playback" />
-            <kctl name="Ext_Reciver_Amp Switch" value="1" />
-            <!--  ALPS05007528 end -->
-	    <kctl name="SpkrLeft Sia81xx Audio Scene" value="Receiver" />
-            <kctl name="SpkrLeft Sia81xx Power" value="On" />
         </path>
         <path name="two_in_one_speaker_output" value="turnoff">
-            <!--  ALPS05007528 begin -->
-	    <kctl name="SpkrLeft Sia81xx Power" value="Off" />
-	    <kctl name="SpkrLeft Sia81xx Audio Scene" value="Playback" />
-            <kctl name="Ext_Reciver_Amp Switch" value="0" />
             <kctl name="RCV Mux" value="Open" />
             <kctl name="RCV_AMP_MODE" value="SPEAKER_MODE" />
         </path>
@@ -128,46 +113,21 @@
         <!--external_speaker output-->
         <path name="ext_speaker_output" value="turnon">
             <kctl name="Ext_Speaker_Amp Switch" value="1" />
-            <!--  ALPS05007528 begin -->
-            <kctl name="Ext_Reciver_Amp Switch" value="1" />
-            <!--  ALPS05007528 end -->
-            <kctl name="SpkrLeft Sia81xx Audio Scene" value="Playback" />
-            <kctl name="SpkrRight Sia81xx Audio Scene" value="Playback" />
-            <kctl name="SpkrRight Sia81xx Power" value="On" />
-            <kctl name="SpkrLeft Sia81xx Power" value="On" />
         </path>
         <path name="ext_speaker_output" value="turnoff">
-	    <kctl name="SpkrRight Sia81xx Power" value="Off" />
-            <kctl name="SpkrLeft Sia81xx Power" value="Off" />
             <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <!--  ALPS05007528 begin -->
-            <kctl name="Ext_Reciver_Amp Switch" value="0" />
-            <kctl name="SpkrLeft Sia81xx Audio Scene" value="Playback" />
-            <kctl name="SpkrRight Sia81xx Audio Scene" value="Playback" />
         </path>
         <path name="ext_speaker_output_left" value="turnon">
             <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <kctl name="Ext_Reciver_Amp Switch" value="1" />
-            <kctl name="SpkrLeft Sia81xx Audio Scene" value="Playback" />
-            <kctl name="SpkrLeft Sia81xx Power" value="On" />
         </path>
         <path name="ext_speaker_output_left" value="turnoff">
-	    <kctl name="SpkrLeft Sia81xx Power" value="Off" />
-            <kctl name="SpkrLeft Sia81xx Audio Scene" value="Playback" />
             <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <kctl name="Ext_Reciver_Amp Switch" value="0" />
         </path>
         <path name="ext_speaker_output_right" value="turnon">
             <kctl name="Ext_Speaker_Amp Switch" value="1" />
-	    <kctl name="SpkrRight Sia81xx Audio Scene" value="Playback" />
-            <kctl name="SpkrRight Sia81xx Power" value="On" />
-            <kctl name="Ext_Reciver_Amp Switch" value="0" />
         </path>
         <path name="ext_speaker_output_right" value="turnoff">
-	    <kctl name="SpkrRight Sia81xx Power" value="Off" />
-            <kctl name="SpkrRight Sia81xx Audio Scene" value="Playback" />
             <kctl name="Ext_Speaker_Amp Switch" value="0" />
-            <kctl name="Ext_Reciver_Amp Switch" value="0" />
         </path>
 	
         <!--mic setting-->
