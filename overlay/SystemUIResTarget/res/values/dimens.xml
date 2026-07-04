@@ -4,7 +4,7 @@
     <color name="config_udfpsColor">#ffffffff</color>
  <dimen name="max_shade_window_blur_radius">13dp</dimen>
     <!-- Location on the screen of the center of the fingerprint sensor. -->
-    <dimen name="physical_fingerprint_sensor_center_screen_location_y">2168px</dimen>
+    <dimen name="physical_fingerprint_sensor_center_screen_location_y">2210px</dimen>
 
     <!-- Location on the screen of the center of the physical power button. This is a reasonable
         default that should be overridden by device-specific overlays. -->
